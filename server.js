@@ -20,6 +20,9 @@ app.set('view engine', 'handlebars');
 //link to the controllers by importing the routes and get the homepage "/"
 var routes = require('./controllers/burgers_controller.js');
 app.use("/", routes);
+
+//to serve the burger image statically
+app.use(express.static(__dirname + '/img'));
 //the port would connect either through local port 3000 or thru heroku 
 var PORT = 3000;
 app.listen(PORT, function(){
