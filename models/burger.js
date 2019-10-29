@@ -6,7 +6,9 @@ var burger = {
         orm.all('burgers', function(response){
             fromORMtoRoutes(response)
         })
-    }
+    },
+    update: function(id, fromORMtoRoutes){
+        orm.update('burgers', id, fromORMtoRoutes)
+    },
 }
-
 module.exports = burger
