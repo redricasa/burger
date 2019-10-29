@@ -1,5 +1,12 @@
 //import orm.js file
-//TODO
 var orm = require('../config/orm.js')
 
-//export.module
+var burger = {
+    all: function(fromORMtoRoutes){
+        orm.all('burgers', function(response){
+            fromORMtoRoutes(response)
+        })
+    }
+}
+
+module.exports = burger
