@@ -11,5 +11,8 @@ var burger = {
         console.log(id, fromORMtoRoutes);
         orm.update('burgers', id, fromORMtoRoutes);
     },
+    create: function(name, fromORMtoRoutes){
+        orm.create('burgers', name, fromORMtoRoutes)
+    }
 }
 module.exports = burger;

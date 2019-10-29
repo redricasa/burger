@@ -13,13 +13,17 @@ router.get('/', function(req, res){
 })
 //updates web page in /burgers/update page
 router.put('/burgers/update', function(req, res){
-    console.log(req.body)
+    console.log(req.body);
     burger.update(req.body.burger_id, function(result){
         console.log(result);
         //server responds by redirecting page to the home route
         res.redirect('/');
-    })
-})
-
+    });
+});
+router.post('/burgers/create', function(req, res){
+    burger.create(req.body.burger_name, function(result){
+        res.redirect('/');
+    });
+});
 //export.module to link to server.js
 module.exports = router;
