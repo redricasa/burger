@@ -1,7 +1,7 @@
-var connect = require("connection.js")
+var connect = require("./connection.js")
 
 //create an object that encompasses all the three methods below:
-var methods= {
+var orm= {
 
 
     // create method to select all - selectAll()
@@ -13,4 +13,4 @@ var methods= {
     // create method to update a row - updateOne()
     //TO DO
 };
-module.export(methods);
+module.exports=orm;

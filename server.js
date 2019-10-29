@@ -10,7 +10,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({
     extended:false
 }))
-app.use(methodOverride('_method'));
+app.use(methodOverride('__method'));
 //sets handlebars as the express engine and set the default layout to main.handlebars
 app.engine('handlebars', exphbs({
     defaultLayout: 'main'
@@ -20,4 +20,6 @@ var routes = require('./controllers/burgers_controller.js');
 app.use("/", routes);
 
 var PORT = 3000;
-app.listen(PORT);
+app.listen(PORT, function(){
+    console.log("connected thru port :" + PORT)
+});

@@ -1,10 +1,12 @@
 //import express
-var express = require(express);
-//import burger.js models/burger.js
-//TO DO
-
-
+var express = require('express');
 //create router
-//TO DO
+var router = express.Router();
+//import burger.js models/burger.js
+var burger = require('../models/burger.js');
 
-//export.module
+router.get('/', function(req, res){
+    res.render('index');
+})
+//export.module to link to server.js
+module.exports = router;
