@@ -1,10 +1,7 @@
 body{
-    background-color: darkred;
+    background: darkred;
     align-content: center;
 }
-#image{
-
-}
-#top-bar{
+/* #top-bar{
     display: block;
-}
+} */

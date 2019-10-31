@@ -1,10 +1,10 @@
 {
   "name": "burger",
   "version": "1.0.0",
-  "description": "",
+  "description": "a burger logger with MySQL, Node, Express, Handlebars and a homemade Object Relational Model  ## Links to deployed app - Heroku: https://warm-waters-07196.herokuapp.com/ - github: https://redricasa.github.io/burger/ - Updated Portfolio: https://redricasa.github.io/Updated-Portfolio/portfolio.html ## Techonologies Used - Deployement sites: heroku and Github pages - Javascript - node.js - nmp modules:     - express     - express-handlebars     - body-parser     - mysql     - method-override",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Frederica Blissett",
@@ -15,5 +15,14 @@
     "express-handlebars": "^3.1.0",
     "method-override": "^3.0.0",
     "mysql": "^2.17.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redricasa/burger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/redricasa/burger/issues"
+  },
+  "homepage": "https://github.com/redricasa/burger#readme"
 }
