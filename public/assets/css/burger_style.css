@@ -2,4 +2,9 @@ body{
     background-color: darkred;
     align-content: center;
 }
+#image{
 
+}
+#top-bar{
+    display: block;
+}
