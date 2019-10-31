@@ -22,7 +22,7 @@ var routes = require('./controllers/burgers_controller.js');
 app.use("/", routes);
 
 //the port would connect either through local port 3000 or thru heroku 
-var PORT = 3000;
+var PORT = 3000 || process.;
 app.listen(PORT, function(){
     console.log("connected thru port :" + PORT);
 });

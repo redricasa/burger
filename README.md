@@ -17,3 +17,4 @@ a burger logger with MySQL, Node, Express, Handlebars and a homemade Object Rela
 
 ## Next Steps
 > Improve CSS: add complementary colors have the color for the devour and submit be #1A9090 
+> delete a burger I no longer want on the devoured section
