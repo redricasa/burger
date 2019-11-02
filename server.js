@@ -20,15 +20,11 @@ app.set('view engine', 'handlebars');
 //link to the controllers by importing the routes and get the homepage "/"
 var routes = require('./controllers/burgers_controller.js');
 app.use("/", routes);
-// Timeout
-// app.use(timeout(15000));
-// app.use(haltOnTimedout);
-
-// function haltOnTimedout(req, res, next) {
-//     if (!req.timedout) next();
-// };
 //the port would connect either through local port 3000 or thru heroku 
-var PORT = 3000 || process.env.JAWSDB_URL;
-app.listen(PORT, function(){
-    console.log("connected thru port :" + PORT);
-});
+// var PORT = 3000 || process.env.JAWSDB_URL;
+// app.listen(PORT, function(){
+//     console.log("connected thru port :" + PORT);
+// });
+app.listen(process.env.PORT || 3000, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+  });
