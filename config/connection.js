@@ -1,7 +1,7 @@
 //connect to mysql with root password in keys.js
 var keys = require('../keys.js');
 var mysql = require('mysql');
-//add jawsdb as a connection
+//add jawsdb as a connection- added the JAWSDB_URL in .env
 var connection;
 if (process.env.JAWSDB_URL) {
     connection = mysql.createConnection(process.env.JAWSDB_URL); 
