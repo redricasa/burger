@@ -21,6 +21,10 @@
     "type": "git",
     "url": "git+https://github.com/redricasa/burger.git"
   },
+  "engines":{
+    "node": "10.16.0",
+    "npm": "6.12.0"
+  },
   "bugs": {
     "url": "https://github.com/redricasa/burger/issues"
   },
