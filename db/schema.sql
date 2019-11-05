@@ -1,6 +1,5 @@
 -- the database name is jawsDB given db name that I have to use in order for the heroku app to connect to mysql workbench
-DROP DATABASE IF EXISTS xi39uusv5rxkzw9r;
-CREATE DATABASE xi39uusv5rxkzw9r;
+
 USE xi39uusv5rxkzw9r;
 
 CREATE TABLE burgers (
