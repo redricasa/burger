@@ -1,5 +1,6 @@
 //import express
 var express = require('express');
+var path = require('path');
 //create router
 var router = express.Router();
 //import burger.js models/burger.js
@@ -25,5 +26,8 @@ router.post('/burgers/create', function(req, res){
         res.redirect('/');
     });
 });
+router.get("/images/:image",function(req, res){
+    res.sendFile(path.join(__dirname + "/../public/assets/images/" + req.params.image))
+})
 //export.module to link to server.js
 module.exports = router;
