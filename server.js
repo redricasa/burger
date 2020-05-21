@@ -6,7 +6,9 @@ var exphbs = require('express-handlebars');
 //initialize express
 var app = express();
 //create a static page server connection to the route /public
-app.use(express.static(__dirname + '/public'));
+// app.use(express.static(__dirname + '/public'));
+// to insure express has access to public folder with style and images
+app.use(express.static(path.join(__dirname, '/public')));
 app.use(bodyParser.urlencoded({
     extended:false
 }));
